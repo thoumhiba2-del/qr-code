@@ -55,7 +55,7 @@ h1{font-size:1.5rem; margin:8px 0 4px; color:var(--red-dark);}
 .btn:active{transform:scale(0.97);}
 .btn-instagram{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);}
 .btn-tiktok{background:#111;}
-.btn-join{background:var(--red);}
+.btn-join{background:#f0d9d9;}
 .btn-join.disabled{background:#ccc; color:#777; pointer-events:none;}
 .icon{font-size:1.2rem;}
 .join-note{font-size:0.78rem; color:var(--gray); margin-top:-6px;}
