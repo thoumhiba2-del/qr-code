@@ -79,4 +79,8 @@ h1{font-size:1.5rem; margin:8px 0 4px; color:var(--red-dark);}
   cursor:pointer;
   font-size:0.85rem;
 }
+.btn-youtube {
+  background-color: #FF0000;
+  color: white;
+}
 .footer{margin-top:24px; font-size:0.75rem; color:var(--gray);}
