@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>YOM – Youth on the Move | EMSI Casablanca</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <header class="header">
+      <div class="logo-wrap">
+        <!-- Remplacez logo.png par votre vrai logo (même nom de fichier) -->
+        <img src="logo.png" alt="Logo YOM" class="logo" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';">
+        <div id="logoFallback" class="logo-fallback">YOM</div>
+      </div>
+      <h1>YOM <span class="dash">–</span> Youth On The Move</h1>
+      <p class="tagline">Empower To Elevate.</p>
+      <p class="subtitle">Club humanitaire &amp; associatif · EMSI Casablanca</p>
+    </header>
+
+    <section class="buttons">
+      <a class="btn btn-instagram" href="https://www.instagram.com/yom.emsi?stkn=bnZnZ2phbXZmcnFj" target="_blank" rel="noopener">
+        <span class="icon"></span> Instagram
+      </a>
+      <a class="btn btn-tiktok" href="https://www.tiktok.com/@yom.emsi.casablanca?_r=1&_t=ZS-9A1ziwMoOF3" target="_blank" rel="noopener">
+        <span class="icon"></span> TikTok
+      </a>
+      <a id="joinBtn" class="btn btn-join" href="#" target="_blank" rel="noopener">
+        <span class="icon"></span> Rejoindre YOM
+      </a>
+      <p id="joinNote" class="join-note">Formulaire bientôt disponible</p>
+    </section>
+
+    <section class="qr-section">
+      <h2>Scannez pour partager</h2>
+      <div id="qrcode" class="qr-box"></div>
+      <button id="downloadQr" class="btn-outline">⬇ Télécharger le QR Code (PNG)</button>
+    </section>
+
+    <footer class="footer">
+      <p>YOM – Youth on the Move · EMSI Casablanca</p>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

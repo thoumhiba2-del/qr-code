@@ -1,0 +1,82 @@
+:root{
+  --red:#E30613;
+  --red-dark:#B8050F;
+  --white:#ffffff;
+  --gray:#6b6b6b;
+  --bg:#fff5f5;
+  --radius:18px;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  background:linear-gradient(180deg,var(--bg) 0%,var(--white) 40%);
+  color:#222;
+  display:flex;
+  justify-content:center;
+  padding:24px 16px calc(24px + env(safe-area-inset-bottom,0px));
+  min-height:100vh;
+}
+.card{
+  width:100%;
+  max-width:420px;
+  background:var(--white);
+  border-radius:var(--radius);
+  box-shadow:0 10px 30px rgba(227,6,19,0.08);
+  padding:32px 24px;
+  text-align:center;
+}
+.logo-wrap{margin-bottom:12px;}
+.logo{max-width:200px; max-height:500px; object-fit:contain;}
+.logo-fallback{
+  display:none;
+  width:90px;height:90px;
+  margin:0 auto;
+  border-radius:50%;
+  background:var(--red);
+  color:var(--white);
+  align-items:center;justify-content:center;
+  font-weight:800; font-size:22px; letter-spacing:1px;
+}
+h1{font-size:1.5rem; margin:8px 0 4px; color:var(--red-dark);}
+.dash{color:var(--gray);}
+.tagline{font-size:1.05rem; margin:4px 0; font-weight:600;}
+.subtitle{color:var(--gray); font-size:0.9rem; margin:0 0 8px;}
+.buttons{display:flex; flex-direction:column; gap:14px; margin:28px 0 8px;}
+.btn{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  padding:16px 20px;
+  border-radius:14px;
+  font-weight:700; font-size:1rem;
+  text-decoration:none;
+  color:var(--white);
+  transition:transform .15s ease, opacity .15s ease;
+}
+.btn:active{transform:scale(0.97);}
+.btn-instagram{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);}
+.btn-tiktok{background:#111;}
+.btn-join{background:var(--red);}
+.btn-join.disabled{background:#ccc; color:#777; pointer-events:none;}
+.icon{font-size:1.2rem;}
+.join-note{font-size:0.78rem; color:var(--gray); margin-top:-6px;}
+.qr-section{margin-top:32px; padding-top:24px; border-top:1px solid #f0d9d9;}
+.qr-section h2{font-size:1rem; color:var(--red-dark); margin-bottom:14px;}
+.qr-box{
+  display:inline-flex;
+  padding:14px;
+  background:var(--white);
+  border:3px solid var(--red);
+  border-radius:14px;
+  margin-bottom:14px;
+}
+.btn-outline{
+  border:2px solid var(--red);
+  background:transparent;
+  color:var(--red-dark);
+  font-weight:700;
+  padding:10px 18px;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:0.85rem;
+}
+.footer{margin-top:24px; font-size:0.75rem; color:var(--gray);}

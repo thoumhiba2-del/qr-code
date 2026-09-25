@@ -1,0 +1,54 @@
+=========================================================
+YOM – Youth on the Move — Landing Page
+=========================================================
+
+FICHIERS
+--------
+- index.html   → la page
+- style.css    → le style (rouge/blanc)
+- config.js    → LES DEUX SEULS RÉGLAGES À MODIFIER
+- script.js    → logique (bouton + QR code)
+- logo.png     → placez ici votre vrai logo (même nom exact)
+
+COMMENT AJOUTER VOTRE LOGO
+---------------------------
+Mettez votre fichier logo dans ce dossier et nommez-le
+exactement : logo.png
+Il apparaîtra automatiquement en haut de la page.
+
+COMMENT AJOUTER LE LIEN DU GOOGLE FORM PLUS TARD
+--------------------------------------------------
+Ouvrez config.js et remplacez :
+   GOOGLE_FORM_URL: "GOOGLE_FORM_URL_HERE"
+par :
+   GOOGLE_FORM_URL: "https://forms.gle/votre-lien"
+Le bouton "Rejoindre YOM" s'activera automatiquement.
+
+HÉBERGER GRATUITEMENT (méthode la plus simple : Netlify)
+------------------------------------------------------------
+1. Allez sur https://app.netlify.com/drop
+2. Faites glisser tout le dossier (les 5 fichiers) sur la page
+3. Netlify vous donne une URL publique, par ex :
+   https://yom-emsi.netlify.app
+4. Ouvrez config.js et collez cette URL dans SITE_URL :
+   SITE_URL: "https://yom-emsi.netlify.app"
+5. Re-déposez le dossier mis à jour sur Netlify (glisser à nouveau)
+   pour publier la mise à jour.
+
+Alternative : GitHub Pages (créez un dépôt, activez "Pages" dans
+les Settings, poussez ces fichiers) — gratuit aussi.
+
+TESTER LE QR CODE AVANT IMPRESSION
+------------------------------------
+- Ouvrez index.html (double-clic) ou votre URL Netlify sur votre
+  téléphone.
+- Scannez le QR code affiché avec l'appareil photo de votre
+  téléphone : il doit afficher l'URL de votre page.
+- Cliquez sur "Télécharger le QR Code (PNG)" pour obtenir une
+  version haute résolution (1000x1000px) prête à imprimer sur
+  affiche.
+
+IMPORTANT : tant que SITE_URL n'est pas rempli dans config.js,
+le QR code pointe temporairement vers l'adresse de test locale —
+pensez à le régénérer (recharger la page + retélécharger) une fois
+le vrai lien Netlify/GitHub Pages renseigné.
