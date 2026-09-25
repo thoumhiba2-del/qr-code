@@ -84,3 +84,35 @@ h1{font-size:1.5rem; margin:8px 0 4px; color:var(--red-dark);}
   color: white;
 }
 .footer{margin-top:24px; font-size:0.75rem; color:var(--gray);}
+/* Assure que le body prend tout l'écran et superpose correctement les éléments */
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Création de l'arrière-plan flou arrière-plan */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Ton image de fond */
+  background-image: url('background.jpg'); /* Ajuste le nom ou le chemin si besoin */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Effet de flou (augmente le '20px' si tu veux un flou encore plus fort) */
+  filter: blur(5px);
+  
+  /* Légèrement agrandir pour éviter les bords blancs causés par le flou */
+  transform: scale(1.1);
+  
+  /* Place le fond sous le contenu */
+  z-index: -1;
+}
